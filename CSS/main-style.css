@@ -1,0 +1,492 @@
+@charset "UTF-8";
+/* CSS Document */
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Niramit&family=Playfair+Display&family=Roboto+Condensed&display=swap');
+body{
+	font-size: 18px;
+	font-family: 'Niramit', sans-serif;
+	
+}
+
+
+
+
+
+
+#header {
+	background-color:#e31837;
+	height: 60px;
+	
+	
+}
+#header .container{
+	display: flex;
+	
+}
+#header .container img{
+	width: 50px;
+	padding: 5px 0;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.menu ul li {
+	position: relative;
+	margin: 7px 10px;
+	
+}
+.menu ul li a {
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 14px 20px;
+	display: block;
+	font-weight: 500;
+	transition: all 0.5s;
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 150px;
+	text-align: center;
+	
+	
+}
+
+.menu ul li a:hover{
+	color: #0C0000
+}
+.menu ul ul {
+	display: block;
+	background: #e31837 ;
+	box-shadow: 0 5px 5px rgba(200,200,200,0.5);
+	position: absolute;
+	width: 170px;
+	top: 100%;
+	margin-top: 0px;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	z-index: 999999;
+	color: white;
+	
+}
+
+.menu ul li:hover>ul{
+	opacity: 1;
+	visibility:visible;
+	top: 100%;
+	
+}
+
+
+
+
+
+/*...............................Content-dich-vu*/
+.content-dich-vu {
+	text-align: center;
+	margin: 0px 0px;
+	background: url( "../IMG/bg content.png");
+	
+	
+}
+
+.content-dich-vu h1 {
+	color:#e31837;
+	font-family: 'Lexend Deca', sans-serif;
+	margin-top: 70px;
+	transition: all 0.3s;
+	transform: scale(0.8);
+	opacity: 0.5
+		
+}
+
+.content-dich-vu:hover h1{
+	opacity: 1;
+	transform: scale(1)
+}
+.content-dich-vu p{
+	text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #000;
+	font-size: 21px;
+	opacity: 0.5;
+	transition: all 0.2s;
+}
+.content-dich-vu:hover p{
+	opacity: 1
+}
+.content-dich-vu .col-3 img {
+	transition: all 0.3s;
+	transform: scale(0.9);
+	cursor: pointer
+}
+.content-dich-vu .col-3:hover img{
+	transform: scale(1)
+}
+
+
+
+/*...................Content-dat-hang*/
+.content-dat-hang{
+	position: relative;
+	
+}
+.banner-dathang{
+	display: block;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	
+}
+.text-dathang{
+	position: absolute;
+	top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 496px;
+    width: 90%;
+    text-align: center;
+    
+}
+
+.content-dat-hang h1 {
+	color:#e31837;
+	font-family: 'Lexend Deca', sans-serif;
+	margin-top: 70px;
+	transition: all 0.3s;
+	transform: scale(0.8);
+	opacity: 0.5
+	
+		
+}
+.content-dat-hang:hover h1{
+	transform: scale(1);
+	opacity: 1
+}
+
+.content-dat-hang p{
+	margin: 20px 0px 50px;
+	opacity: 0.5
+}
+
+
+
+.content-dat-hang:hover p{
+
+	opacity: 1
+}
+.btn-primary{
+	background-color:red;
+	color: #FFFFFF;
+	padding: 10px 25px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 20px;
+	font-family:'Lexend Deca', sans-serif; 
+	
+}
+.btn-primary:hover{
+	background-color:#DF0004;
+}
+
+
+
+
+/*...................Content-tin-tuc*/
+.content-tin-tuc .text-tintuc{
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin: 70px 0 20px;
+}
+
+.content-tin-tuc img{
+	transition: all 0.2s;
+	
+}
+.content-tin-tuc .col-3:hover img{
+	
+	transform: scale(1.1)
+}
+.content-tin-tuc h1{
+	color:#e31837;
+	font-family: 'Lexend Deca', sans-serif;
+	
+}
+.content-tin-tuc h3{
+	font-size: 16px;
+    line-height: 30px;
+    
+    color: #2b2b2b;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+	height: 68px;
+	opacity: 0.5;
+	transition: all 0.3
+
+    
+}
+
+.content-tin-tuc .col-3:hover h3,
+.content-tin-tuc .col-3:hover p{
+	opacity: 1;
+	
+}
+
+.content-tin-tuc p {
+	color: #343434;
+	font-size: 14px;
+	opacity: 0.5;
+	transition: all 0.1s
+}
+
+.content-tin-tuc .bam{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 15px 0 100px
+}
+/*...................Footer*/
+
+
+.footer {
+	height: 600px;
+	background-color: #e31837;
+	color: white;
+	display: block;
+	
+}
+
+.footer .footer-logo{
+	width: 100px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.footer .thong-tin-cty{
+	display: block
+}
+.footer .thong-tin-cty p {
+	font-size: 16px;
+    line-height: 28px;
+	cursor: pointer;
+	
+}
+.sdt{
+	width: 190px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+
+
+
+.socia{
+	display: block;
+}
+.socia .face{
+	display: flex;
+	align-items: center;
+}
+.socia .face img{
+	width: 34px;
+	height: 34px;
+	cursor: pointer;
+}
+.socia .face p{
+	margin-left: 15px;
+	cursor: pointer;
+}
+.thong-bao img{
+	width: 200px;
+	margin: 20px 0px;
+	cursor: pointer;
+		
+}
+.app img {
+	width: 140px;
+	display: block;
+	margin: 10px 0px;
+	cursor: pointer;
+}
+/*..............Ve-chung-toi.........*/
+#content
+.content-ve-chung-toi{
+	display: flex;
+    justify-content: center;
+    background-color: #FFC522;
+    padding-top: 25px;
+}
+.content-ve-chung-toi p{
+	margin: 60px 0px
+}
+
+/*	-------------------Content-ve-chung-toi-2---------*/
+
+.content-ve-chung-toi-2{background-color: #e31837;}
+.content-ve-chung-toi-2 .col-3 .kichthuocanh img {width:120%}
+
+
+
+/*	-------------------Content-ve-chung-toi-3---------*/
+
+
+
+.content-ve-chung-toi-3 h1{
+	color:#e31837;
+	text-align:center;
+font-family: 'Lexend Deca', sans-serif;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin:auto;
+	opacity: 0.5;
+	transition: all 0.3
+ 
+}
+.content-ve-chung-toi-3 :hover h1{
+	opacity: 1;
+	
+}
+.content-ve-chung-toi-3 p{
+	color:black;
+font-family: 'Niramit', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin:auto;
+	opacity: 0.5;
+	transition: all 0.3}
+.content-ve-chung-toi-3 :hover p{
+	opacity: 1;
+	
+}
+.content-ve-chung-toi-3{
+		background-color: #F5F1E6;
+}
+
+
+/*	-------------------banchay---------*/
+
+#banchay h1{color:#e31837;
+	font-family: 'Lexend Deca', sans-serif;
+	text-align:center;
+	margin-top: 90px
+	
+}
+#banchay
+.container .col-4 h2{
+	font-family: 'Lexend Deca', sans-serif;
+	color:#e31837; 
+	text-align:center;
+	font-size:18px;
+	justify-content: center;
+		
+		
+}
+#banchay
+.container .col-4 p{
+	font-family: 'Lexend Deca', sans-serif;
+	color:black; 
+	text-align:center;
+	font-size:18px;
+	justify-content: center;
+		
+		
+}
+
+ 	
+
+/*	-------------------Content-ve-chung-toi-4---------*/
+
+
+.content-ve-chung-toi-4 {
+	position: relative;
+	
+}
+.text-ve-chung-toi-4 h1 {
+	font-family: 'Lexend Deca', sans-serif;
+	color: white;
+	position: absolute;
+	top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 496px;
+    width: 100%;
+    text-align: center;
+}
+ .text-ve-chung-toi-4 .icon{
+	color:#FFFFFF;
+	position: absolute;
+	top: 20%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    max-width: 496px;
+    width: 100%;
+    text-align: center;
+	 display:inline-flex
+
+	
+}
+
+.text-ve-chung-toi-4 .icon  span{
+	font-size: 55px;
+	margin: 9px;	
+}
+.text-ve-chung-toi-4 .icon p{
+	font-size: 20px;
+	font-weight:900;
+	font-family: 'Lexend Deca', sans-serif;
+}
+.text-ve-chung-toi-4 .icon-2{
+	color:#FFFFFF;
+	position: absolute;
+	top: 40%;
+    left:45%;
+    transform: translate(-50%, -50%);
+    max-width: 496px;
+    width: 100%;
+    text-align: center;
+	 display:inline-flex
+}
+.text-ve-chung-toi-4 .icon-2  span{
+	font-size: 55px;
+	margin: 9px;
+	align-content: center
+	
+}
+.text-ve-chung-toi-4 .icon-2 p{
+	font-size: 20px;
+	font-weight:900;
+	font-family: 'Lexend Deca', sans-serif;
+	align-content: center
+}
+.content-ve-chung-toi-4 .banner-ve-chung-toi {
+border-radius: 10px;
+backdrop-filter: blur(7.5px);
+-webkit-backdrop-filter: blur(7.5px);
+}
+
+.img-100-hinh-nen{
+background: rgba(0, 0, 0, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+	width: 100%;}
+.ve-chung-toi-5 .col-6 h1{
+	color:#e31837;
+	text-align: center;
+	font-family: 'Niramit', sans-serif;
+}
+.ve-chung-toi-5 .col-6 p{margin: 30px 10px;
+justify-content: center;
+ }
+
